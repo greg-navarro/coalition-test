@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from 'react-router-dom';
-import '../App.css';
  
 
 const Home = () => {
@@ -12,11 +11,11 @@ const Home = () => {
             <div class="col-sm-12">
                 <div id="nav">
                     <div id="nav-grid">
-                        <div id="brand"><Link to="/">Los Angeles Mountains</Link></div>
+                        <div id="brand"><a href="">Los Angeles Mountains</a></div>
                         <div>
                             <ul id="nav-links">
-                                <li><Link to="/history">01. HISTORY</Link></li>
-                                <li><Link to="/team">02. TEAM</Link></li>
+                                <li><Link to="/history">History</Link></li>
+                                <li><a href="#">02. TEAM</a></li>
                             </ul>
                         </div>
                     </div>
