@@ -34,7 +34,7 @@
 
 #ClimbButtons {
     /* grid-column: 2 / 4; */
-    background-color: rgb(24, 89, 68);
+    background-color: #414f6b;
     display: grid;
     grid-template-columns: 15% 1fr 15%;
 }
@@ -48,14 +48,21 @@
 
 }
 
-#ClimbButtons a {
-    background-color: rgb(24, 89, 68);
-    height: 100%;
+#ClimbButtons div {
+    color: #a0a7b5;
+    padding: 0px 15px;
+    /* height: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0px 15px;
+    padding: 0px 15px; */
+}
+
+.selectedClimb {
+    background-color: #b0b4be;
+    color: #414f6b;
+    text-decoration: underline;
 }
 
 #ClimbMain {

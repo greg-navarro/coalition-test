@@ -1,8 +1,24 @@
-import  React from "react";
+import  React, { useState } from "react";
 import styles from './Climb.module.css';
-import { Link } from "react-router-dom";
 
 const Climb = () => {
+    const climbs = [
+        { name: "Mountain 1", schedule: "./images/Climb-Schedule.png" },
+        { name: "Mountain 2", schedule: "./images/Climb-Schedule.png" }
+    ]
+
+    const [selectedClimb, setSelectedClimb] = useState(0);
+
+    const getClimbButtons = () => {
+        return climbs.map((climb, index) => {
+            if (index === selectedClimb) {
+                return <div key={index} className={styles.selectedClimb} >{climb.name}</div>
+            
+            } else {
+                return <div key={index} onClick={() => setSelectedClimb(index)}>{climb.name}</div>
+            }
+        });
+    }
 
     return (
         <div id={styles.Climb}>
@@ -15,8 +31,8 @@ const Climb = () => {
             </div>
             <div id={styles.ClimbButtons}>
                 <div id={styles.ClimbButtonsFlexContainer}>
-                    <Link to="/climb/1">MOUNTAIN 1</Link>
-                    <Link to="/climb/2">MOUNTAIN 2</Link>
+                    <div to="/climb/1">MOUNTAIN 1</div>
+                    <div to="/climb/2">MOUNTAIN 2</div>
                 </div>
             </div>
             <div id={styles.ClimbMain}> 
