@@ -8,8 +8,9 @@ const Climb = () => {
         <div id={styles.Climb}>
             <div id={styles.ClimbHeader}>
                 <div id={styles.ClimbHeaderFlexContainer}>
-                    <h1>02. CLIMB</h1>
-                    <p>Find your next climb</p>
+                    <img src="./images/02_.png" />
+                    <img src="./images/Climb.png" />
+                    <p>Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </p>
                 </div>
             </div>
             <div id={styles.ClimbButtons}>
