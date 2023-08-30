@@ -21,6 +21,23 @@ const Climb = () => {
         });
     }
 
+    const getAccordian = () => {
+        const accordianItems = []
+        for (let index = 0; index < climbs.length; index++) {
+            if (index === selectedClimb) {
+                accordianItems.push(
+                    <div key={index} className={styles.selectedClimb}><p>{climbs[selectedClimb].name}</p></div>
+                ) 
+                accordianItems.push(
+                    <img key={climbs.length} src={climbs[selectedClimb].schedule}/>
+                )
+            } else {
+                accordianItems.push(<div key={index} className={styles.climbButton} onClick={() => setSelectedClimb(index)}><p>{climbs[index].name}</p></div>)
+            }
+        }
+        return accordianItems;
+    }
+
     return (
         <div id={styles.Climb}>
             <div id={styles.ClimbHeader}>
@@ -39,7 +56,13 @@ const Climb = () => {
                 <div id={styles.ClimbMainContainer}>
                     <img src={climbs[selectedClimb].schedule}/>
                 </div>
+
+
+                <div id={styles.ClimbMainContainerMobile}>
+                    { getAccordian() }
+                </div>
             </div>
+
             <div id={styles.ClimbFooter}> 
                 <div id={styles.ClimbFooterLeft}>
                     <Link to="/">

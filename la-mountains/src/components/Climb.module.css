@@ -10,6 +10,7 @@
     background-color: #ffffff;
     display: grid;
     grid-template-columns: 15% 1fr 15%;
+    overflow: hidden;
 }
 
 #ClimbHeaderFlexContainer {
@@ -36,6 +37,7 @@
     background-color: #414f6b;
     display: grid;
     grid-template-columns: 15% 1fr 15%;
+    overflow: hidden;
 }
 
 #ClimbButtonsFlexContainer {
@@ -46,20 +48,17 @@
     align-items: center;
 }
 
+/* positions flex container */
 #ClimbButtons div {
-    color: #a0a7b5;
     padding: 0px 15px;
-    /* height: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px 15px; */
+}
+
+#ClimbButtonsFlexContainer div {
+    height: 100%;
 }
 
 .selectedClimb {
     background-color: #b0b4be;
-    height: 100%;
 }
 
 .selectedClimb p {
@@ -71,9 +70,6 @@
     font-family: Oswald, sans-serif;
 }
 
-.climbButton {
-
-}
 
 .climbButton p {
     font-size: 16px;
@@ -87,7 +83,7 @@
     grid-template-columns: 15% 1fr 1fr 15%;
     background-image: url('../images/climb-background.png');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: 50% 95%;
     
 
@@ -136,4 +132,35 @@
     margin-right: 1em;
     font-family: Lato, sans-serif;
     font-style: italic;
+}
+
+
+/* Media queries for mobile */
+@media only screen and (max-width: 600px) {
+    /* Redo grid layout, we no longer need a buttons section, these will be in mobile main */
+    #Climb {
+        /* grid-template-rows: 18% 1fr 10%; */
+        display: flex;
+        flex-direction: column;
+    }    
+    #ClimbButtons {
+        display: none;
+    }
+    #ClimbMain {
+        height: 100vh;
+        grid-template-columns: 7% 1fr 7%;
+    }
+    #ClimbMainContainer {
+        display: none;
+    }
+    #ClimbMainContainerMobile {
+        grid-column: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100%;
+        background-color: green;
+    }
+
 }
