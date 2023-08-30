@@ -1,28 +1,29 @@
-import React from "react";
-import './History.css'
+import React from "react"
+import { Link } from 'react-router-dom';
+import styles from './History.module.css'
 
 const History = () => {
 
     return (
-        <div class="container">
+        <div id={styles.history}>
   
-        <div id="nav">
-            <div id="nav-grid">
-                <div id="brand"><a href="index.html">Los Angeles Mountains</a></div>
+        <div id={styles.nav}>
+            <div id={styles.navgrid}>
+                <div id={styles.brand}><Link to="/">Los Angeles Mountains</Link></div>
                 <div>
-                    <ul id="nav-links">
+                    <ul id={styles.navlinks}>
                         <li><a href="#">01. HISTORY</a></li>
                         <li><a href="#">02. TEAM</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div id="main">
-            <div class="main-flex-container">
-                <div id="main-label"><img src="./images/title-history.png" /></div>
-                <div id="main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </div>
+        <div id={styles.main}>
+            <div className={styles.mainflexcontainer}>
+                <div id={styles.mainlabel}><img src="./images/title-history.png" /></div>
+                <div id={styles.maintext}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </div>
             </div>
-            <div id="carousel">
+            <div id={styles.carousel}>
                 asdasdf
             </div>
         </div>

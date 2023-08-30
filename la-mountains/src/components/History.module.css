@@ -1,31 +1,25 @@
-body {
-    /* background-color: red; */
-    padding: 0;
-    margin: 0;
-}
 
-.container {
+
+#history {
     height: 100vh;
-    background-color: aqua;
+    background-color: white;
     display: grid;
     grid-template-rows: auto 1fr;
 }
 
 #nav {
-    background-color: white;
     height: 5em;
     margin: 0;
     padding-left: 10em;
     padding-right: 10em;   
 }
 
-#nav-grid {
+#navgrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "brand nav-links nav-links";
     height: 100%;
-    /* background-color: antiquewhite; */
 }
 
 #brand {
@@ -36,7 +30,7 @@ body {
     /* background-color: aqua; */
 }
 
-#nav-links {
+#navlinks {
     height: 100%;
     list-style-type: none;
     display: flex;
@@ -54,7 +48,7 @@ a {
     text-decoration: underline;
 }
 
-a:hover {
+#navlinks a:hover {
     color: gray;
 }
 
@@ -63,10 +57,6 @@ a:visited {
 }
 
 #main {
-
-    background-color: blanchedalmond;
-    /* display: flex;
-    flex-direction: column; */
     display: grid;
     grid-template-rows: 4.5fr 2fr;
     background-image: url("../images/history-bg.png");
@@ -75,7 +65,7 @@ a:visited {
     background-repeat: no-repeat;
 }
 
-.main-flex-container {
+.mainflexcontainer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -88,9 +78,7 @@ a:visited {
     gap: 1em;
 }
 
-#main-label {
-    /* background-color: blue; */
-    /* height: 100%; */
+#mainlabel {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -98,7 +86,7 @@ a:visited {
     align-items: center;
 }
 
-#main-text {
+#maintext {
     padding-left:3em;
     padding-right: 3em;
     line-height: 2em;
@@ -110,9 +98,5 @@ a:visited {
 }
 
 #carousel {
-    /* height: 5em; */
-    /* absolute position at bottom of page */
-    /* position: absolute;
-    bottom: 0; */
     background-color: rgba(0, 0, 255, 0.5);
 }

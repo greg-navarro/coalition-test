@@ -1,18 +1,18 @@
 import React from "react"
 import { Link } from 'react-router-dom';
-import './Home.css';
+import styles from './Home.module.css';
 
  
 
 const Home = () => {
 
     return (
-    <div id="home">
-      <div id="nav">
-        <div id="nav-grid">
-            <div id="brand"><Link to="/">Los Angeles Mountains</Link></div>
+    <div id={styles.home}>
+      <div id={styles.nav}>
+        <div id={styles.navgrid}>
+            <div id={styles.brand}><Link to="/">Los Angeles Mountains</Link></div>
             <div>
-                <ul id="nav-links">
+                <ul id={styles.navlinks}>
                     <li><Link to="/history">01. HISTORY</Link></li>
                     <li><Link to="/">02. TEAM</Link></li>
                 </ul>

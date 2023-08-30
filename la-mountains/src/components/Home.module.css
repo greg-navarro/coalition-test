@@ -15,7 +15,7 @@
     background: rgba(0, 0, 0, 0.0)  
   }
   
-  #nav-grid {
+  #navgrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -30,7 +30,7 @@
     align-items: center;
   }
   
-  #nav-links {
+  #navlinks {
     height: 100%;
     list-style-type: none;
     display: flex;
