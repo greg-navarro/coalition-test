@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from 'react-router-dom';
+import Carousel from './Carousel.jsx'
 import styles from './History.module.css'
 
 const History = () => {
@@ -9,7 +10,7 @@ const History = () => {
   
         <div id={styles.nav}>
             <div id={styles.navgrid}>
-                <div id={styles.brand}><Link to="/">Los Angeles Mountains</Link></div>
+                <div id={styles.brand}><Link to="/"><img src="./images/logoandtext.png" alt="Los Angeles Mountains Logo" /></Link></div>
                 <div>
                     <ul id={styles.navlinks}>
                         <li><a href="#">01. HISTORY</a></li>
@@ -24,7 +25,7 @@ const History = () => {
                 <div id={styles.maintext}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </div>
             </div>
             <div id={styles.carousel}>
-                asdasdf
+                <Carousel />
             </div>
         </div>
         
