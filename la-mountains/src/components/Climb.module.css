@@ -1,0 +1,101 @@
+#Climb {
+    background-color: blueviolet;
+    height: 100vh;
+    display: grid;
+    /* grid-template-columns: 15% 1fr 1fr 15%; */
+    grid-template-rows: 10% 5% 1fr 10%;
+}
+
+#ClimbHeader {
+    /* grid-column: 1 / 5; */
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 15% 1fr 15%;
+}
+
+#ClimbHeaderFlexContainer {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#ClimbHeader p {
+    color: black;
+}
+
+#ClimbButtons {
+    /* grid-column: 2 / 4; */
+    background-color: rgb(24, 89, 68);
+    display: grid;
+    grid-template-columns: 15% 1fr 15%;
+}
+
+#ClimbButtonsFlexContainer {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+#ClimbButtons a {
+    background-color: rgb(24, 89, 68);
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 15px;
+}
+
+#ClimbMain {
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 15%;
+}
+
+#ClimbMainContainer {
+    grid-column: 2 / 3;
+    height: 100%;
+    background-color: chartreuse;
+    position: relative;
+}
+
+#ClimbMainContainer img {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+
+
+#ClimbFooter {
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 15%;
+    background-color: rgb(51, 4, 222);
+}
+
+#ClimbFooterLeft {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: bisque;
+    height: 100%;
+    /* width: 100%; */
+}
+
+#ClimbFooterRight {
+    grid-column: 3 / 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: aqua;
+    height: 100%;
+    /* width: 100%; */
+}
