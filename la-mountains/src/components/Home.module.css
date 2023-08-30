@@ -67,6 +67,19 @@
     color: white;
   }
   
+
+  @media only screen and (max-width: 750px) {
+    /* Reposition background image */
+    #home {
+      background-position: 35% 50%;
+    }
+
+    /* Remove gutters */
+    #nav {
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+  } 
   
   
  
