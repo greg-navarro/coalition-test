@@ -67,9 +67,10 @@
     display: grid;
     grid-template-rows: 4.5fr 2fr;
     background-image: url("../images/history-bg.png");
-    background-size: 100%;
+    background-size: cover;
     background-position: 50% 45%;
     background-repeat: no-repeat;
+    padding-top: 1em;
 }
 
 .mainflexcontainer {
@@ -113,4 +114,52 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    /* adjust layout */
+    #nav {
+        padding-left: 2em;
+        padding-right: 2em;
+        height: 4em;
+    }
+
+    #main {
+        /* padding-top: 2em; */
+    }
+
+    .mainflexcontainer {
+        /* background-color: lime; */
+        height: 70%;
+        background-color: rgba(230, 233, 239, 0.8);
+        border-radius: 5%;
+        padding-top: 1em;
+        padding-left: 1em;
+        justify-content: flex-start;
+    }
+  } 
+
+@media only screen and (max-width: 700px) {
+
+     #main {
+        padding-top: 5em;
+        background-color: black;
+    }
+
+    .mainflexcontainer {
+        height: 80%;
+        overflow-y: auto;
+    }
+
+    #mainlabel img{
+        width: 50%;
+        height: auto;
+
+    }
+
+    .mainflexcontainer p {
+        font-size: 10px;
+    }
 }
