@@ -10,7 +10,7 @@ const Home = () => {
     <div id={styles.home}>
       <div id={styles.nav}>
         <div id={styles.navgrid}>
-            <div id={styles.brand}><Link to="/">Los Angeles Mountains</Link></div>
+            <div id={styles.brand}><Link to="/"><img src="./images/logo.png" alt="Los Angeles Mountains Logo" /></Link></div>
             <div>
                 <ul id={styles.navlinks}>
                     <li><Link to="/history">01. HISTORY</Link></li>
