@@ -1,0 +1,65 @@
+#home {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-image: url("../images/la-mountains.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #nav {
+    height: 5em;
+    margin: 0;
+    padding-left: 10em;
+    padding-right: 10em; 
+    background: rgba(0, 0, 0, 0.0)  
+  }
+  
+  #nav-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "brand nav-links nav-links";
+    height: 100%;
+  }
+  
+  #brand {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  #nav-links {
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1em;
+    padding: 0;
+    margin: 0;
+  }
+  
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    color: gray;
+  }
+  
+  a:visited {
+    color: white;
+  }
+  
+  
+  
+ 
+  
+  
+ 
+ 
+  
