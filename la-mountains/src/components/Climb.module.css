@@ -95,6 +95,10 @@
     position: relative;
 }
 
+#ClimbMainContainerMobile {
+    display: none;
+}
+
 #ClimbMainContainer img {
     position: absolute;
     top: 5%;
@@ -137,6 +141,28 @@
 
 /* Media queries for mobile */
 @media only screen and (max-width: 600px) {
+    /* Adjust the upper panel so that text is less awkward looking */
+    #ClimbHeader {
+        grid-template-columns:1fr;
+        padding: 16px;
+
+    }
+
+    #ClimbHeaderFlexContainer {
+        /* grid-column: 2 / 3; */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        height: 70%;
+    }
+
+    #ClimbHeader p {
+        font-size: 14px;
+        text-overflow: ellipsis;
+    }
+
+
     /* Redo grid layout, we no longer need a buttons section, these will be in mobile main */
     #Climb {
         /* grid-template-rows: 18% 1fr 10%; */
@@ -160,7 +186,18 @@
         justify-content: flex-start;
         align-items: center;
         height: 100%;
-        background-color: green;
+        gap: 1em;
+        padding-top: 3em;
+    }
+
+    #ClimbMainContainerMobile div {
+        width: 100%;
+        text-align: center;
+        background-color: #414f6b;
+    }
+
+    #ClimbMainContainerMobile .selectedClimb {
+        background-color: #b0b4be;
     }
 
 }
