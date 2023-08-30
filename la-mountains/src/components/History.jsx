@@ -13,8 +13,8 @@ const History = () => {
                 <div id={styles.brand}><Link to="/"><img src="./images/logoandtext.png" alt="Los Angeles Mountains Logo" /></Link></div>
                 <div>
                     <ul id={styles.navlinks}>
-                        <li><a href="#">01. HISTORY</a></li>
-                        <li><a href="#">02. TEAM</a></li>
+                        <li><Link to={"/history"}>01. HISTORY</Link></li>
+                        <li><Link to={"/climb"}>02. TEAM</Link></li>
                     </ul>
                 </div>
             </div>

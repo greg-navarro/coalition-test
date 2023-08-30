@@ -14,7 +14,7 @@ const Home = () => {
             <div>
                 <ul id={styles.navlinks}>
                     <li><Link to="/history">01. HISTORY</Link></li>
-                    <li><Link to="/">02. TEAM</Link></li>
+                    <li><Link to="/climb">02. TEAM</Link></li>
                 </ul>
             </div>
         </div>

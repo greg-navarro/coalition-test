@@ -1,9 +1,8 @@
 #Climb {
-    background-color: blueviolet;
     height: 100vh;
     display: grid;
     /* grid-template-columns: 15% 1fr 1fr 15%; */
-    grid-template-rows: 18% 5% 1fr 10%;
+    grid-template-rows: 18% 7% 1fr 10%;
 }
 
 #ClimbHeader {
@@ -45,7 +44,6 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-
 }
 
 #ClimbButtons div {
@@ -61,20 +59,43 @@
 
 .selectedClimb {
     background-color: #b0b4be;
-    color: #414f6b;
+    height: 100%;
+}
+
+.selectedClimb p {
+    color: #414f6b;;
     text-decoration: underline;
+    text-underline-offset: 0.25em;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: Oswald, sans-serif;
+}
+
+.climbButton {
+
+}
+
+.climbButton p {
+    font-size: 16px;
+    font-weight: 800;
+    color: #b0b4be;
+    font-family: Oswald, sans-serif;
 }
 
 #ClimbMain {
-    background-color: yellow;
     display: grid;
     grid-template-columns: 15% 1fr 1fr 15%;
+    background-image: url('../images/climb-background.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50% 95%;
+    
+
 }
 
 #ClimbMainContainer {
     grid-column: 2 / 3;
     height: 100%;
-    background-color: chartreuse;
     position: relative;
 }
 
@@ -84,12 +105,10 @@
     left: 5%;
 }
 
-
-
 #ClimbFooter {
     display: grid;
     grid-template-columns: 15% 1fr 1fr 15%;
-    background-color: rgb(51, 4, 222);
+    background-color: #414f6b;
 }
 
 #ClimbFooterLeft {
@@ -98,7 +117,6 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    background-color: bisque;
     height: 100%;
     /* width: 100%; */
 }
@@ -109,7 +127,13 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    background-color: aqua;
     height: 100%;
     /* width: 100%; */
+}
+#ClimbFooterRight p {
+    color: #63769d;
+    font-size: 16px;
+    margin-right: 1em;
+    font-family: Lato, sans-serif;
+    font-style: italic;
 }

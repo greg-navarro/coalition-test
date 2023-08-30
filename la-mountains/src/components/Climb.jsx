@@ -1,10 +1,11 @@
 import  React, { useState } from "react";
+import { Link } from "react-router-dom";
 import styles from './Climb.module.css';
 
 const Climb = () => {
     const climbs = [
-        { name: "Mountain 1", schedule: "./images/Climb-Schedule.png" },
-        { name: "Mountain 2", schedule: "./images/Climb-Schedule.png" }
+        { name: "MOUNTAIN 1", schedule: "./images/Climb-Schedule.png" },
+        { name: "MOUNTAIN 2", schedule: "./images/Climb-Schedule.png" }
     ]
 
     const [selectedClimb, setSelectedClimb] = useState(0);
@@ -12,10 +13,10 @@ const Climb = () => {
     const getClimbButtons = () => {
         return climbs.map((climb, index) => {
             if (index === selectedClimb) {
-                return <div key={index} className={styles.selectedClimb} >{climb.name}</div>
+                return <div key={index} className={styles.selectedClimb}><p>{climb.name}</p></div>
             
             } else {
-                return <div key={index} onClick={() => setSelectedClimb(index)}>{climb.name}</div>
+                return <div key={index} className={styles.climbButton} onClick={() => setSelectedClimb(index)}><p>{climb.name}</p></div>
             }
         });
     }
@@ -31,22 +32,23 @@ const Climb = () => {
             </div>
             <div id={styles.ClimbButtons}>
                 <div id={styles.ClimbButtonsFlexContainer}>
-                    <div to="/climb/1">MOUNTAIN 1</div>
-                    <div to="/climb/2">MOUNTAIN 2</div>
+                    {getClimbButtons()}
                 </div>
             </div>
             <div id={styles.ClimbMain}> 
                 <div id={styles.ClimbMainContainer}>
-                    <img src="./images/Climb-Schedule.png"/>
+                    <img src={climbs[selectedClimb].schedule}/>
                 </div>
             </div>
             <div id={styles.ClimbFooter}> 
                 <div id={styles.ClimbFooterLeft}>
-                    <img src="./images/Climb-Logo.png"/>
-                    <img src="./images/Climb-Logo-Text.png"/>
+                    <Link to="/">
+                        <img src="./images/Climb-Logo.png"/>
+                        <img src="./images/Climb-Logo-Text.png"/>
+                    </Link>
                 </div>
                 <div id={styles.ClimbFooterRight}>
-                    <p>© 2021 Climb. All rights reserved.</p>
+                    <p>COPYRIGHT 2016. ALL RIGHTS RESERVED.</p>
                 </div>
             </div>
         </div>
