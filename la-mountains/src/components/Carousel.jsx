@@ -27,9 +27,9 @@ const Carousel = () => {
         const ellipses = [];
         for (let i = 0; i < totalSlides; i++) {
             if (i === slide) {
-                ellipses.push(<img src="./images/carousel/Ellipse-1.png" key={i} className="Ellipse EllipseActive" />);
+                ellipses.push(<img alt="selected ellipse button" src="./images/carousel/Ellipse-1.png" key={i} className="Ellipse EllipseActive" />);
             } else {
-                ellipses.push(<img src="./images/carousel/Ellipse-2.png" key={i} className="Ellipse" onClick={() => setSlide(i)} />);
+                ellipses.push(<img alt="ellipse button" src="./images/carousel/Ellipse-2.png" key={i} className="Ellipse" onClick={() => setSlide(i)} />);
             }
         }
         return ellipses;
@@ -43,7 +43,7 @@ const Carousel = () => {
             getImages().map((image, index) => {
                 return (
                     <div key={index} className="CarouselImage">
-                        <img src={image} alt="Carousel Image" />
+                        <img src={image} alt="Displayed gallery item" />
                     </div>
                 );
             })  

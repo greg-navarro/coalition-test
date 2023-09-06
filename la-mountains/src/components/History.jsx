@@ -21,7 +21,7 @@ const History = () => {
         </div>
         <div id={styles.main}>
             <div className={styles.mainflexcontainer}>
-                <div id={styles.mainlabel}><img src="./images/title-history.png" /></div>
+                <div id={styles.mainlabel}><img alt="icon image for title section" src="./images/title-history.png" /></div>
                 <div id={styles.maintext}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </div>
             </div>
             <div id={styles.carousel}>

@@ -29,7 +29,7 @@ const Climb = () => {
                     <div key={index} className={styles.selectedClimb}><p>{climbs[selectedClimb].name}</p></div>
                 ) 
                 accordianItems.push(
-                    <img key={climbs.length} src={climbs[selectedClimb].schedule}/>
+                    <img alt="Current selected accordian item" key={climbs.length} src={climbs[selectedClimb].schedule}/>
                 )
             } else {
                 accordianItems.push(<div key={index} className={styles.climbButton} onClick={() => setSelectedClimb(index)}><p>{climbs[index].name}</p></div>)
@@ -42,8 +42,8 @@ const Climb = () => {
         <div id={styles.Climb}>
             <div id={styles.ClimbHeader}>
                 <div id={styles.ClimbHeaderFlexContainer}>
-                    <img src="./images/02_.png" />
-                    <img src="./images/Climb.png" />
+                    <img alt="title element 02" src="./images/02_.png" />
+                    <img alt="icon element" src="./images/Climb.png" />
                     <p>Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </p>
                 </div>
             </div>
@@ -54,7 +54,7 @@ const Climb = () => {
             </div>
             <div id={styles.ClimbMain}> 
                 <div id={styles.ClimbMainContainer}>
-                    <img src={climbs[selectedClimb].schedule}/>
+                    <img alt="schedule for selected climb" src={climbs[selectedClimb].schedule}/>
                 </div>
 
 
@@ -66,8 +66,8 @@ const Climb = () => {
             <div id={styles.ClimbFooter}> 
                 <div id={styles.ClimbFooterLeft}>
                     <Link to="/">
-                        <img src="./images/Climb-Logo.png"/>
-                        <img src="./images/Climb-Logo-Text.png"/>
+                        <img alt="logo/link" src="./images/Climb-Logo.png"/>
+                        <img alt="logo-text/link" src="./images/Climb-Logo-Text.png"/>
                     </Link>
                 </div>
                 <div id={styles.ClimbFooterRight}>
